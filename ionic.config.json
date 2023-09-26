@@ -1,0 +1,7 @@
+{
+  "name": "APP_UX",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
