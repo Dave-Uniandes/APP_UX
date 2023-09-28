@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <ion-title>App Alarma</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -18,4 +18,44 @@
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+<ion-content [fullscreen]="false">
+    <ion-card color="medium">
+      <ion-card-header color="medium">
+        <ion-card-title>Alarmas app</ion-card-title>
+        <ion-card-subtitle>Tu próxima alarmas sonará en 10h 30min</ion-card-subtitle>
+        <ion-card-subtitle></ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="full">Tus Alarmas</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item color="white">
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-toggle aria-label="Tertiary toggle" color="tertiary" [checked]="true">
+              <ion-label color="large">Medicamentos</ion-label>
+              <ion-note color="medium">10:30 PM</ion-note>
+            </ion-toggle>
+          </ion-item>
+          <ion-item color="white">
+            <ion-thumbnail slot="start">
+              <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+            </ion-thumbnail>
+            <ion-toggle aria-label="Tertiary toggle" color="tertiary" [checked]="true">
+              <ion-label color="large">Despertar</ion-label>
+              <ion-note color="medium">8:30 AM</ion-note>
+            </ion-toggle>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+    <ion-button color="blue">
+    <ion-icon slot="start" name="add"></ion-icon>
+      Crear
+    </ion-button>
+  </ion-content>
 </ion-content>

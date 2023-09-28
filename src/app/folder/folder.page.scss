@@ -1,5 +1,5 @@
 ion-menu-button {
-  color: var(--ion-color-primary);
+  color: #fff;
 }
 
 #container {
@@ -26,3 +26,31 @@ ion-menu-button {
 #container a {
   text-decoration: none;
 }
+
+ion-card {
+  background-color: #6300ee75;
+}
+
+ion-list {
+  background-color: #6300ee75;
+}
+ion-item {
+  background: #fff;
+}
+
+ion-card-title {
+  color: black;
+}
+
+ion-lable {
+  color: black;
+}
+
+ion-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: #63B3DB;
+}
+
+
