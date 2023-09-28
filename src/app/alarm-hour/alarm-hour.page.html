@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Hora</ion-title>
+  </ion-toolbar>
+
+
+<ion-list>
+  <ion-reorder-group [disabled]="true" >
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>03:00 pm</ion-card-title>
+        <ion-card-subtitle>Alarma</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        L M M J V S D
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Vibrar</ion-card-subtitle>
+        <ion-card-subtitle>Volumen</ion-card-subtitle>
+        <ion-card-subtitle>Sonido</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Postponer</ion-card-subtitle>
+        <ion-card-subtitle>Cancelar</ion-card-subtitle>
+        <ion-card-subtitle>Acciones</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Antidormilón</ion-card-subtitle>
+        <ion-card-subtitle>Parar después de:</ion-card-subtitle>
+        <ion-card-subtitle>Flash cámara</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </ion-reorder-group>
+  <ion-button expand="full">Simular</ion-button> 
+  <ion-button routerLink="/folder/inbox" expand="full">Guardar</ion-button>
+</ion-list>

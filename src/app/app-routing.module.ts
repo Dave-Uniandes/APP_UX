@@ -10,7 +10,11 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },  {
+    path: 'alarm-hour',
+    loadChildren: () => import('./alarm-hour/alarm-hour.module').then( m => m.AlarmHourPageModule)
   }
+
 ];
 
 @NgModule({
